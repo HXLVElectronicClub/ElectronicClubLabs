@@ -14,22 +14,22 @@ byte shape[8] = {B01100110,
                  B00011000,
                  B00000000};
    //uncomment for animation
-byte shape1[8] = {B01100110,
-                  B11111111,
-                  B11011011,
-                  B11000011,
-                  B01100110,
-                  B00111100,
-                  B00011000,
-                  B00000000};
-byte shape2[8] = {B01100110,
-                  B11111111,
-                  B11111111,
-                  B11111111,
-                  B01111110,
-                  B00111100,
-                  B00011000,
-                  B00000000}; 
+//byte shape1[8] = {B01100110,
+//                  B11111111,
+//                  B11011011,
+//                  B11000011,
+//                  B01100110,
+//                  B00111100,
+//                  B00011000,
+//                  B00000000};
+//byte shape2[8] = {B01100110,
+//                  B11111111,
+//                  B11111111,
+//                  B11111111,
+//                  B01111110,
+//                  B00111100,
+//                  B00011000,
+//                  B00000000}; 
 
 
 void setup() {
@@ -41,11 +41,11 @@ void setup() {
 void loop() {
   displayMatrix(shape);
    //uncomment for animation
-  delay(500);
-  displayMatrix(shape1);
-  delay(500);
-  displayMatrix(shape2);
-  delay(500);
+//  delay(500);
+//  displayMatrix(shape1);
+//  delay(500);
+//  displayMatrix(shape2);
+//  delay(500);
   
 }
 
