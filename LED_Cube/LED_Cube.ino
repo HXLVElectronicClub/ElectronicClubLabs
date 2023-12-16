@@ -6,7 +6,7 @@
 // To be included only in main(), .ino with setup() to avoid `Multiple Definitions` Linker Error
 #include "TimerInterrupt.h"
 
-#define TIMER1_INTERVAL_MS    5
+#define TIMER1_INTERVAL_MS    2
 
 #define CLOCK  0
 #define LATCH 1
@@ -60,10 +60,9 @@ void setLed(char x, char y, char z, char val) {
 }
 
 void clear() {
-  cache[0] = 0;
-  cache[1] = 0;
-  cache[2] = 0;
-  cache[3] = 0;
+  for(int i=0;i<4;i++) {
+    cache[i] = 0;
+  }
 }
 
 void animation1() {
@@ -99,8 +98,8 @@ void animation2() {
     setLed(x, 1, 3, 1);
     setLed(x, 2, 3, 1);
     delay(200);
-    clear();
   }
+  clear();
 }
 
 void rectangle() {
